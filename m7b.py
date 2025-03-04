@@ -9,7 +9,7 @@ def parse_student(input):
 
     dict_input = {"id": "".join(id_input),
                   "name":"".join(name_input),
-                  "birthday":"".join(birthday_input[0:2]) + "/" + "".join(birthday_input[2:])}
+                  "birthdate":"".join(birthday_input[0:2]) + "/" + "".join(birthday_input[2:])}
     return dict_input
 
 
@@ -54,6 +54,3 @@ battle_data = {
         "win": ["Bulbizard", "Infernchimp"]
     },
 }
-
-
-print(list_fighters(battle_data))
