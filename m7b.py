@@ -5,7 +5,7 @@ def parse_student(x):
 
     student["name"] = x[8:-4]
 
-    student["birthdate"] = x[4:-2] + "/" + x[-2:]
+    student["birthdate"] = x[-4:-2] + "/" + x[-2:]
 
     return student
 
