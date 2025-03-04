@@ -1,17 +1,13 @@
-def parse_student(input):
-    list_input = list(input)
+def parse_student(x):
+    student = {}
 
-    id_input = list_input[0:8]
+    student["id"] = int(x[0:8])
 
-    name_input = list_input[8:-4]
+    student["name"] = x[8:-4]
 
-    birthday_input = list_input[-4:]
+    student["birthdate"] = x[4:-2] + "/" + x[-2:]
 
-    dict_input = {"id": "".join(id_input),
-                  "name":"".join(name_input),
-                  "birthdate":"".join(birthday_input[0:2]) + "/" + "".join(birthday_input[2:])}
-    return dict_input
-
+    return student
 
 def count_items(it):
     it_counts = {}
